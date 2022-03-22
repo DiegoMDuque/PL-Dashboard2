@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# parfumLegende (DASHBOARD)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Producto: Perfumes para mujer.
 
-## Available Scripts
+- Audiencia objetiva: Mujeres entre 16 y 80 años.
 
-In the project directory, you can run:
+- Una empresa de comercialización y distribución de fragancias y perfumes, la 
+cuál busca ayudar a que siempre lleves contigo el mejor aroma y la mejor calidad. Estamos comprometidos con el cuidado y bienestar de las mujeres en una sociedad diversa y global.
 
-### `npm start`
+# Integrantes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Diego Mauricio Duque
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+    Nacido en Abejorral, Antioquia, Colombia. 25 Años.
+    Residente en la ciudad de Medellín, Antioquia.
+    Miembro de entidades en Colombia en defensa de la Civilización Cristiana y la promoción de los principios católicos.
+    Formador juvenil en Filosofía de la Historia y Opinión Pública en Acción Joven - Colombia.
+    Tecnólogo en Sistemas de la Universidad Politécnico Gran Colombiano - Sena.
+    Parte de la Cohorte 4.1 de ProTalento.
+    Estudiante de Programación Web Full Stack en Digital House.
+    Amante de la lectura, la conversación y las actividades al aire libre.
 
-### `npm test`
+- Jeison Andres Moyano
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    26 Años ,Nacido en la ciudad de Bogotá,Tecnico en sistemas(Sena), perteneciente a la cohorte 4.1 de protalento, amante de las nuevas tecnologias y nuevos retos. practicante     de deportes y videojuegos en tiempos libres. 
 
-### `npm run build`
+- Wilson Stevens Cardenas
+Ingeniero Catastral y Geodesta, nacido en el municipio de Tabio, perteneciente a la corte 4.1 de proTalento, amante, soñador y emprendedor. Creo que este país si tiene arreglo. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Páginas de referencia
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para nuestro proyecto PARFUM LÉNGENDE, hemos elegido las siguientes páginas como referencia diversa, las hemos elegido según el criterio que se especifica debajo de cada link.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
++ MUA: https://mua.com.co/
 
-### `npm run eject`
+    Página que tomamos como base de gran parte de nuestro Wireframe. Enfocada en productos femeninos, con diseño suave y las secciones de sitio se adecuan a nuestro boceto del proyecto.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
++ XUSS: https://www.xuss.co/
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Página enfocada en productos para mujeres. Algunas animaciones de la página inicial nos parecen útiles para implementar.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
++ Bagy Buy: https://bagybuy.com/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    Página de ventas enfocada a público femenino. La sección y funcionalidad del carrito se adapta a nuestro proyecto.
 
-## Learn More
++ La Central del Perfume: https://www.lacentraldelperfume.com/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Página enfocada en venta de perfumería en general. Tomamos como referencia algunas partes de la estructura de la página, banners y estructuración de la página según el tema en particular (perfumería).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
++ Ayenda Hoteles: https://ayenda.com/
+    
+    Página de servicios - hotelería. Pretendemos adaptar el diseño del encabezado y la funcionalidad del buscador.
 
-### Code Splitting
++ Nido de Libros: https://nidodelibros.com/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Página de venta de libros. La consideremos por algunas funcionalidades en el carrito y combinar parte de su distribución de los bloques de la página inicial.
 
-### Analyzing the Bundle Size
+# Imagen del proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
++ Logo
 
-### Making a Progressive Web App
+    Logotipos: https://drive.google.com/file/d/18MNUBnnhmEVAaeCNlYjKt3LweUuG89Nt/view?usp=sharing
+    
++ Colores
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    #8b7171
+    #a68382
+    #393737
+    #bb8e8e
+    #dfcbca    
 
-### Advanced Configuration
++ Tipografías
+    
+    - Roboto Slab (https://fonts.google.com/specimen/Roboto+Slab)
+    - Alegreya (https://fonts.google.com/specimen/Alegreya)
+    - Myanmar Khyay (https://es.ffonts.net/Myanmar-Khyay.font)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Tablero de JIRA
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://diegomduquec.atlassian.net/jira/software/projects/PL/boards/2
