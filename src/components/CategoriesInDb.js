@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Categories from "./Categories";
 
-function ProductsInDb() {
+function CategoriesInDb() {
   const [Products, setProducts] = useState([]);
 
   useEffect(async () => {
@@ -11,11 +11,13 @@ function ProductsInDb() {
   const obtenerDatos = async () => {
     const data = await fetch("https://scent-zone.herokuapp.com/api/products");
     const productPrevio = await data.json();
-    let product = productPrevio.countByCategory
-    setProducts(product);
+    let product = productPrevio
+    setProducts(productPrevio);
   };
 
-  const content =
+console.log("DB -> " + Products.countByCategory);
+
+  /*const content =
     Products.length === 0 ? (
       <p>Cargando...</p>
     ) : (
@@ -28,17 +30,18 @@ function ProductsInDb() {
           frutales={product.frutales}
         ></Categories>
       ))
-    );
+    );*/
 
-  return (
-    <div className="col-lg-6 mb-4">
+  return (""
+   /*  <div className="col-lg-6 mb-4">
       <div className="card-header py-3">
         <h5 className="m-0 font-weight-bold text-gray-800">
           Listado de Categorías
         </h5>
       </div>
-    </div>
+      {content}
+    </div> */
   );
 }
 
-export default ProductsInDb;
+export default CategoriesInDb;

@@ -1,27 +1,32 @@
 import React, { useState, useEffect } from "react";
-import UserDetail from "./UserDetail";
+import User from "./User";
 
 function LastUser() {
-  const [user, setUsers] = useState([]);
+  const [user, setuser] = useState([]);
 
   useEffect(async() => {
     await obtenerDatos();
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch("https://artisanmarket.herokuapp.com/api/users/last");
-    const user = await data.json();
-    setUsers(user);
+    const data = await fetch("https://scent-zone.herokuapp.com/api/users");
+    const userPrevio = await data.json();
+    let user = userPrevio.users
+    setuser(user);
   };
-  const content = (
-        <UserDetail
-          id={user.id}
-          name={user.nombre}
-          lastname={user.apellido}
-          picture={user.imagen}
-          email={user.email}
-        ></UserDetail>
-    );
+
+  const lastUser = user[user.length - 1]
+
+  const content = user.length === 0 ? (
+    <p color="red">Cargando...</p>
+  ) :(
+    <User
+     id={lastUser.id}
+     name={lastUser.first_name}
+     lastName={lastUser.lastName}
+     email={lastUser.email}
+    />
+  );
   return (
     <div className="col-lg-6 mb-4">
         <div className="card-header py-3">

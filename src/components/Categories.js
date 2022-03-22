@@ -1,7 +1,7 @@
 import React from "react";
 
 function Categories(props) {
-  console.log(props);
+  console.log("props ->" +props);
   return (
     <div className="col-lg-6 mb-4">
       <br></br>

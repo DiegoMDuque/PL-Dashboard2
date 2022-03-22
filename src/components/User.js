@@ -18,8 +18,8 @@ function User(props) {
             />
           </div>
           <p>
-            Nombre: {props.name} {props.lastname}<br></br>
-            Email: {props.email}
+            {props.name} {props.lastname}<br></br>
+            {props.email}
           </p>
           <p>_____________</p>
             <Link className="product__button" to={id}>

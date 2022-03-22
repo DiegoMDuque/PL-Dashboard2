@@ -10,7 +10,7 @@ function Targets() {
   }, []);
 
   const obtenerDatosP = async () => {
-    const data = await fetch("https://artisanmarket.herokuapp.com/api/products");
+    const data = await fetch("https://scent-zone.herokuapp.com/api/products");
     const productPrevio = await data.json();
     let product = productPrevio.products
     setProducts(product);

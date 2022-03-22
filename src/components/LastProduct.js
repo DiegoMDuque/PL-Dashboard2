@@ -9,33 +9,35 @@ function LastProduct() {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch(`https://scent-zone.herokuapp.com/api/products/21`);
+    const data = await fetch(`https://scent-zone.herokuapp.com/api/products`);
     const productPrevio = await data.json();
-    let product = productPrevio.product
+    let product = productPrevio.products
     setProducts(product);
   };
 
-  console.log(product);
+  const lastProduct = product[product.length - 1]
 
-  const result = (
+  const result = product.length === 0 ? (
+    <p color="red">Cargando...</p>
+  ) : (
     <Product
-      id={product.id}
-      name={product.product_name}
-      description={product.description}
-      price={product.price}
-      size={product.size}     
+      id={lastProduct.id}
+      name={lastProduct.product_name}
+      description={lastProduct.description}
+      price={lastProduct.price}
+      size={lastProduct.size}
     />
   );
 
   return (
     <div className="col-lg-6 mb-4">
-        <div className="card-header py-3">
-          <h5 className="m-0 font-weight-bold text-gray-800">
-            Último Producto
-          </h5>
-        </div>
-        {result}
+      <div className="card-header py-3">
+        <h5 className="m-0 font-weight-bold text-gray-800">
+          Último Producto
+        </h5>
       </div>
+      {result}
+    </div>
   );
 }
 export default LastProduct;

@@ -4,7 +4,6 @@ import ContentWrapper from './ContentWrapper';
 import UsersInDb from './UsersInDb';
 import ProductsInDb from './ProductsInDb';
 import CategoriesInDb from './CategoriesInDb'
-import RegionsInDb from './RegionsInDb';
 import Targets from './Targets';
 import FindProduct from './FindProduct';
 import LastProduct from "./LastProduct";
@@ -74,9 +73,6 @@ function SideBar(){
                 </Route>
                 <Route path="/CategoriesInDb">
                     <CategoriesInDb />
-                </Route>
-                <Route path="/RegionsInDb">
-                    <RegionsInDb />
                 </Route>
                 <Route path="/Targets">
                     <Targets />
