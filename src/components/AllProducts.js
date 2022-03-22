@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Product from "./Product";
 
-function ProductsInDb() {
+function AllProducts() {
   const [Products, setProducts] = useState([]);
 
   useEffect(async () => {
@@ -42,4 +42,4 @@ function ProductsInDb() {
   );
 }
 
-export default ProductsInDb;
+export default AllProducts;

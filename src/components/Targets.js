@@ -34,7 +34,7 @@ function Targets() {
 
   /* <!-- Products in DB --> */
 
-  let productsInDB = {
+  let AllProducts = {
     title: "Total Productos",
     color: "primary",
     cuantity: count,
@@ -50,7 +50,7 @@ function Targets() {
     icon: "fa-user-check",
   };
 
-  let cartProps = [productsInDB, usersQuantity];
+  let cartProps = [AllProducts, usersQuantity];
   return (
     <div className="row">
       {cartProps.map((product, i) => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import User from "./User";
 
-function UsersInDb() {
+function AllUsers() {
   const [Users, setUsers] = useState([]);
 
   useEffect(async() => {
@@ -41,4 +41,4 @@ function UsersInDb() {
   );
 }
 
-export default UsersInDb;
+export default AllUsers;

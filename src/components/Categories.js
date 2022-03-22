@@ -6,15 +6,15 @@ function Categories(props) {
     <div className="col-lg-6 mb-4">
         <div className="card-body">
           <p>
-            DULCES: {props.dulces}
+            DULCES: <p>{props.dulces}</p>
             <br></br>
-            AMADERADOS: {props.amaderados}
+            AMADERADOS: <p>{props.amaderados}</p>
             <br></br>
-            CÍTRICOS: {props.citricos}
+            CÍTRICOS: <p>{props.citricos}</p>
             <br></br>
-            FLORALES: {props.florales}
+            FLORALES: <p>{props.florales}</p>
             <br></br>
-            FRUTALES: {props.frutales}
+            FRUTALES: <p>{props.frutales}</p>
           </p>
         </div>    
     </div>

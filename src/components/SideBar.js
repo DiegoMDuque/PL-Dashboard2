@@ -1,79 +1,79 @@
 import React from 'react';
 import image from '../assets/images/logo.png';
 import ContentWrapper from './ContentWrapper';
-import UsersInDb from './UsersInDb';
-import ProductsInDb from './ProductsInDb';
-import CategoriesInDb from './CategoriesInDb'
+import AllUsers from './AllUsers';
+import AllProducts from './AllProducts';
 import Targets from './Targets';
 import FindProduct from './FindProduct';
 import FindUser from './FindUser';
 import LastProduct from "./LastProduct";
 import LastUser from "./LastUser";
 import NotFound from './NotFound';
-import {Link, Route, Switch} from 'react-router-dom';
+import AllCategories from './AllCategories';
+import { Link, Route, Switch } from 'react-router-dom';
 
-function SideBar(){
-    return(
+function SideBar() {
+    return (
         <React.Fragment>
-   {/*<!-- Sidebar -->*/}
-               <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
+            {/*<!-- Sidebar -->*/}
+            <ul className="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
                 <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                     <div className="sidebar-brand-icon">
-                        <img className="w-100" src={image} alt="Digital House"/>
+                        <img className="w-100" src={image} alt="Digital House" />
                     </div>
                 </Link>
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider my-0"/>
+                <hr className="sidebar-divider my-0" />
 
                 {/*<!-- Nav Item - Dashboard -->*/}
-               <li className="nav-item active">
-                   <Link className="nav-link" to="/">
-                       <i className="fas fa-fw fa-tachometer-alt"></i>
-                       <span>Dashboard - Parfum Légende</span></Link>
-               </li>
+                <li className="nav-item active">
+                    <Link className="nav-link" to="/">
+                        <i className="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard - Parfum Légende</span></Link>
+                </li>
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider"/>
+                <hr className="sidebar-divider" />
 
                 {/*<!-- Heading -->*/}
                 <div className="sidebar-heading">Opciones</div>
 
                 {/*<!-- Nav Item - Users -->*/}
                 <li className="nav-item">
-                <Link className="nav-link" to="/UsersInDb">
+                    <Link className="nav-link" to="/allUsers">
                         <span>Lista de Usuarios</span>
                     </Link>
                 </li>
 
                 {/*<!-- Nav Item - Products -->*/}
                 <li className="nav-item">
-                    <Link className="nav-link" to="/ProductsInDb">
+                    <Link className="nav-link" to="/allProducts">
                         <span>Lista de Productos</span></Link>
                 </li>
 
                 {/*<!-- Nav Item - Categories -->*/}
-                    <li className="nav-item">
-                    <Link className="nav-link" to="/CategoriesInDb">
+                <li className="nav-item">
+                    <Link className="nav-link" to="/allCategories">
                         <span>Lista de Categorías</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
-                <hr className="sidebar-divider d-none d-md-block"/>
+                <hr className="sidebar-divider d-none d-md-block" />
             </ul>
             <Switch>
                 <Route exact path="/">
                     <ContentWrapper />
                 </Route>
-                <Route path="/UsersInDb">
-                    <UsersInDb />
+                <Route path="/AllUsers">
+                    <AllUsers />
                 </Route>
-                <Route path="/ProductsInDb">
-                    <ProductsInDb />
+                <Route path="/allProducts">
+                    <AllProducts />
                 </Route>
-                <Route path="/CategoriesInDb">
-                    <CategoriesInDb />
+                <Route path="/allCategories">
+                    <AllCategories />
                 </Route>
                 <Route path="/Targets">
                     <Targets />
