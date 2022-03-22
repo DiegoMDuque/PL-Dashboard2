@@ -12,16 +12,15 @@ function ProductDetail(props) {
             />
           </div>
           <p>
-            <h4>{props.name}</h4>
+            Nombre: <h4>{props.name}</h4>
             <br></br>
-            {props.description}
+              <b>Descripcion:</b> {props.description}
+           
             <br></br>
-            Precio: {props.price}
+            <br></br>            
+            <b>Precio:</b> {props.price}
             <br></br>
-            Cantidad: {props.amount} ml
-            <br></br>
-            Categoría: {props.category}
-            <br></br>
+            <b>Cantidad:</b> {props.amount} ml
           </p>
         </div>
       </div>

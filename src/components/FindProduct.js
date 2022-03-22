@@ -30,15 +30,12 @@ function FindProduct() {
   const result = (
     <ProductDetail
       name={product.product_name}
-      description={product.descripcion}
+      description={product.description}
       price={product.price}
       size={product.size}
-      image={productImage}
-      
+      image={productImage}      
     />
   );
-
-console.log(product);
 
   return (
     <div className="col-lg-6 mb-4">

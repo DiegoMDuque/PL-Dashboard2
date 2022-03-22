@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import ProductDetail from "./ProductDetail";
+import UserDetail from "./UserDetail";
 
-function FindProduct() {
-  const [product, setProducts] = useState([]);
+function FindUser() {
+  const [user, setUsers] = useState([]);
   let { id } = useParams();
 
   useEffect(async () => {
@@ -11,27 +11,29 @@ function FindProduct() {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch(`https://artisanmarket.herokuapp.com/api/products/${id}`);
-    const product = await data.json();
-    setProducts(product);
+    const data = await fetch(`https://scent-zone.herokuapp.com/api/users/${id}`);
+    const userPrevio = await data.json();
+    let user = userPrevio.user
+    setUsers(user);
   };
 
   const result = (
-    <ProductDetail
-      name={product.nombre}
-      description={product.descripcion}
-      price={product.precio}
-      picture={product.imagen}
-      amount={product.cantidad}
+    <UserDetail
+      id={user.id}
+      name={user.first_name}
+      lastName={user.lastName}
+      email={user.email}
     />
   );
+
+  // console.log("Result" + result);
 
   return (
     <div className="col-lg-6 mb-4">
       <div className="card shadow mb-4">
         <div className="card-header py-3">
           <h5 className="m-0 font-weight-bold text-gray-800">
-            Descripción de Producto
+            Detalle del Usuario
           </h5>
         </div>
         {result}
@@ -39,4 +41,5 @@ function FindProduct() {
     </div>
   );
 }
-export default FindProduct;
+
+export default FindUser;

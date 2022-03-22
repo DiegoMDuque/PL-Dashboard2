@@ -3,6 +3,7 @@ import image from '../assets/images/logo.png';
 import ContentWrapper from './ContentWrapper';
 import UsersInDb from './UsersInDb';
 import ProductsInDb from './ProductsInDb';
+import CategoriesInDb from './CategoriesInDb'
 import RegionsInDb from './RegionsInDb';
 import Targets from './Targets';
 import FindProduct from './FindProduct';
@@ -39,17 +40,23 @@ function SideBar(){
                 {/*<!-- Heading -->*/}
                 <div className="sidebar-heading">Opciones</div>
 
-                {/*<!-- Nav Item - Pages -->*/}
+                {/*<!-- Nav Item - Users -->*/}
                 <li className="nav-item">
                 <Link className="nav-link" to="/UsersInDb">
                         <span>Lista de Usuarios</span>
                     </Link>
                 </li>
 
-                {/*<!-- Nav Item - Charts -->*/}
+                {/*<!-- Nav Item - Products -->*/}
                 <li className="nav-item">
                     <Link className="nav-link" to="/ProductsInDb">
                         <span>Lista de Productos</span></Link>
+                </li>
+
+                {/*<!-- Nav Item - Categories -->*/}
+                    <li className="nav-item">
+                    <Link className="nav-link" to="/CategoriesInDb">
+                        <span>Lista de Categorías</span></Link>
                 </li>
 
                 {/*<!-- Divider -->*/}
@@ -64,6 +71,9 @@ function SideBar(){
                 </Route>
                 <Route path="/ProductsInDb">
                     <ProductsInDb />
+                </Route>
+                <Route path="/CategoriesInDb">
+                    <CategoriesInDb />
                 </Route>
                 <Route path="/RegionsInDb">
                     <RegionsInDb />

@@ -22,14 +22,12 @@ function UsersInDb() {
       Users.map((user, index) => (
         <User
           key={index}
+          id={user.id}
           name={user.first_name}
           email={user.email}
         ></User>
       ))
     );
-
-
-console.log(Users);
 
   return (
     <div className="col-lg-6 mb-4">

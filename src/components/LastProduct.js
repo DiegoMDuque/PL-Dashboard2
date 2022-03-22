@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import ProductDetail from "./ProductDetail";
+import Product from "./Product";
 
 function LastProduct() {
   const [product, setProducts] = useState([]);
@@ -9,18 +9,21 @@ function LastProduct() {
   }, []);
 
   const obtenerDatos = async () => {
-    const data = await fetch(`https://artisanmarket.herokuapp.com/api/products/last`);
-    const product = await data.json();
+    const data = await fetch(`https://scent-zone.herokuapp.com/api/products/21`);
+    const productPrevio = await data.json();
+    let product = productPrevio.product
     setProducts(product);
   };
 
+  console.log(product);
+
   const result = (
-    <ProductDetail
-      name={product.nombre}
-      description={product.descripcion}
-      price={product.precio}
-      picture={product.imagen}
-      amount={product.cantidad}
+    <Product
+      id={product.id}
+      name={product.product_name}
+      description={product.description}
+      price={product.price}
+      size={product.size}     
     />
   );
 
