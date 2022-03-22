@@ -4,18 +4,23 @@ import UserDetail from "./UserDetail";
 
 function FindUser() {
   const [user, setUsers] = useState([]);
+  const [userImage, setUserImage] = useState([]);
+
   let { id } = useParams();
 
   useEffect(async () => {
-    await obtenerDatos();
-  }, []);
+    fetch(`https://scent-zone.herokuapp.com/api/users/${id}`)
+    .then(response => response.json())
+    .then(data => {
+      setUsers(data.userData)
+    })
 
-  const obtenerDatos = async () => {
-    const data = await fetch(`https://scent-zone.herokuapp.com/api/users/${id}`);
-    const userPrevio = await data.json();
-    let user = userPrevio.user
-    setUsers(user);
-  };
+    fetch(`https://scent-zone.herokuapp.com/api/users/${id}`)
+    .then(response => response.json())
+    .then(data => {
+      setUserImage(data.userImage)
+    })
+  }, []);
 
   const result = (
     <UserDetail
@@ -23,6 +28,7 @@ function FindUser() {
       name={user.first_name}
       lastName={user.lastName}
       email={user.email}
+      image={userImage.url}
     />
   );
 

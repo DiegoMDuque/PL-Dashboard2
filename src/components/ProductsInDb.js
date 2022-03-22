@@ -14,6 +14,7 @@ function ProductsInDb() {
     let product = productPrevio.products
     setProducts(product);
   };
+  
   const content =
     Products.length === 0 ? (
       <p>Cargando...</p>

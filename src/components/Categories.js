@@ -4,18 +4,19 @@ function Categories(props) {
   console.log("props ->" +props);
   return (
     <div className="col-lg-6 mb-4">
-      <br></br>
-      <div className="card shadow mb-4">
         <div className="card-body">
           <p>
-            Dulces: {props.dulces}
-            Amaderados: {props.amaderados}
-            Cítricos: {props.citricos}
-            Florales: {props.florales}
-            Frutales: {props.frutales}
+            DULCES: {props.dulces}
+            <br></br>
+            AMADERADOS: {props.amaderados}
+            <br></br>
+            CÍTRICOS: {props.citricos}
+            <br></br>
+            FLORALES: {props.florales}
+            <br></br>
+            FRUTALES: {props.frutales}
           </p>
-        </div>
-      </div>
+        </div>    
     </div>
   );
 }

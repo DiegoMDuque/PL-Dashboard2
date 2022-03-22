@@ -3,8 +3,6 @@ import React from "react";
 
 function User(props) {
   let id = `/FindUser/${props.id}`
-  //console.log("Result " + id);
-
   return (
     <div className="col-lg-6 mb-4">
       <br></br>
@@ -22,7 +20,7 @@ function User(props) {
             {props.email}
           </p>
           <p>_____________</p>
-            <Link className="product__button" to={id}>
+            <Link className="user__button" to={id}>
               Detalle
             </Link>
           </div>

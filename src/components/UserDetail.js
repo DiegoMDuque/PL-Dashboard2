@@ -9,16 +9,16 @@ function UserDetail(props) {
           <div className="text-center">
             <img
               className="img-fluid px-3 px-sm-4 mt-3 mb-4"
-              style={{ width: 60 + "rem" }} src={props.image} />
+              style={{ width: 10 + "rem" }} src={props.image} />
           </div>
           <p>
-                    Nombre: {props.name} {props.lastName}<br></br>
-                    Id: {props.id}<br></br>
-                    Email: {props.email}
-                </p>
-                </div>
-                </div>
-              </div>
+            Nombre: {props.name} {props.lastName}<br></br>
+            Id: {props.id}<br></br>
+            Email: {props.email}
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
 
